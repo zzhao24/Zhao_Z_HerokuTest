@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel='stylesheet' href='/stylesheets/master.css' />
-  </head>
-  <body>
-    <a href="/">Home</a>
-    <h1> Anything under me is being rendered dynamically from the route</h1>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link rel='stylesheet' href='/stylesheets/master.css' />
+    </head>
+    <body>
+        <!-- MAIN HEADER-->
+        <header class="text-center">
+            <a href="/"><img src="images/logo_chanel.svg" alt="Chanel" id="logo"></a>
+        </header>
 
-    <!-- triple handlebars is a shorthand for a route-view -->
-    {{{body}}}
+        <!-- triple handlebars is a shorthand for a route-view -->
+        {{{body}}}
 
-    <h3> I live under the router view</h3>
-    <a href="/user1">User 1</a>
-    <a href="/user2">user 2</a>
-  </body>
+        <div class="container" id="product-group">
+            <div class="row text-center">
+                <h3 class="text-center text-uppercase col-12 mb-4">Discover More</h3>
+                <div class="col-sm-6 col-md-4 col-lg-3 my-2">
+                    <a href="/product1" class="d-block inner">
+                        <img src="images/j12-white.jpg" alt="J12 White Steel" class="w-100 d-block mb-3">
+                        <p class="product-name">J12 Watch</p>
+                        <p class="desc">White ceramic and steel</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 my-2">
+                    <a href="/product2" class="d-block inner">
+                        <img src="images/j12-black.jpg" alt="J12 Black Steel" class="w-100 d-block mb-3">
+                        <p class="product-name">J12 Watch</p>
+                        <p class="desc">Black highly resistant ceramic and steel</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 my-2">
+                    <a href="/product3" class="d-block inner">
+                        <img src="images/j12-white-diamonds.jpg" alt="J12 White Diamonds" class="w-100 d-block mb-3">
+                        <p class="product-name">J12 Watch</p>
+                        <p class="desc">White ceramic, steel and diamonds</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 my-2">
+                    <a href="/product4" class="d-block inner">
+                        <img src="images/j12-black-diamonds.jpg" alt="J12 White Diamonds" class="w-100 d-block mb-3">
+                        <p class="product-name">J12 Watch</p>
+                        <p class="desc">Black ceramic, steel and diamonds</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center">
+            &copy; 2019. Chanel. All Rights Reserved.
+        </footer>
+    </body>
 </html>

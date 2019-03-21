@@ -1,5 +1,111 @@
+/* Global Style */
 body {
   background: $bg-color;
   color: $text-color;
   font-size: 14px;
 }
+
+a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+header{
+  padding: 30px 15px;
+  #logo{
+    width: 240px;
+    height: auto;
+  }
+}
+
+.product-name{
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.desc,
+.label{
+  font-size: .75rem;
+  margin-bottom: 0;
+  color: rgba(black, .5);
+}
+
+#main-banner{
+  -webkit-background-size: cover;
+  background-size: cover;
+  .content{
+    padding: 45px 30px;
+  }
+}
+
+
+#product-group{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .inner{
+    padding-bottom: 30px;
+    background-color: $prod-bg-color;
+    height: 100%;
+
+    p.product-name{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    p.desc{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+
+p.product-name{
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+p.desc{
+  font-size: .75rem;
+  margin-bottom: 0;
+  color: rgba(black, .5);
+}
+
+footer{
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-size: .75rem;
+  color: rgba(black, .5);
+}
+
+
+@media (min-width: 768px) {
+  #main-banner {
+    background: url('../images/banner-image.jpg') no-repeat center center;
+    padding: 60px;
+    .content{
+      padding: 60px 30px;
+      max-width: 55%;
+      color: $bg-color;
+      line-height: 1.5;
+
+      h1{
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+      p{
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #main-banner {
+    padding: 90px 60px;
+    .content{
+      padding: 90px 30px;
+      max-width: 45%;
+    }
+  }
+}
+
