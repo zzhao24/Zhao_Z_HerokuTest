@@ -1,4 +1,39 @@
-<h1>Welcome {{name}}!</h1>
-<img src="/images/{{bioPic}}" alt="bio image">
-<p>You are currently logged in as {{role}}.</p>
-<p>{{bio}}</p>
+<div class="container-fluid text-center" id="product-banner">
+    <img src="/images/{{prodPic}}" alt="Product Image" class="product-image">
+    <p class="product-name">{{name}}</p>
+    <p class="desc">{{shortDesc}}</p>
+</div>
+
+<div id="product-features" class="container">
+    <div class="row">
+        <h2 class="mb-5 col-12">Features</h2>
+        <div class="col-sm-6">
+            <p class="label">Name</p>
+            <p class="info">{{name}}</p>
+            <p class="label">Reference</p>
+            <p class="info">{{ref}}</p>
+            <p class="label">Materials</p>
+            <p class="info">{{material}}</p>
+            <p class="label">Case</p>
+            <p class="info">{{case}}</p>
+            <p class="label">Caseback</p>
+            <p class="info">{{caseback}}</p>
+            <p class="label">Crown</p>
+            <p class="info">{{crown}}</p>
+        </div>
+        <div class="col-sm-6">
+            <p class="label">Bezel</p>
+            <p class="info">{{bezel}}</p>
+            <p class="label">Dial</p>
+            <p class="info">{{dial}}</p>
+            <p class="label">Strap</p>
+            <p class="info">{{strap}}</p>
+            <p class="label">Movement</p>
+            <p class="info">{{movement}}</p>
+            <p class="label">Water-resistance</p>
+            <p class="info">{{waterResistance}}</p>
+            <p class="label">Diameter</p>
+            <p class="info">{{diameter}}</p>
+        </div>
+    </div>
+</div>
